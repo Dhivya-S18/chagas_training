@@ -1,0 +1,37 @@
+{
+    "features": [
+        "PR_interval_mean",
+        "PR_interval_std",
+        "PR_interval_min",
+        "PR_interval_max",
+        "QRS_duration_mean",
+        "QRS_duration_std",
+        "QRS_duration_min",
+        "QRS_duration_max",
+        "QT_interval_mean",
+        "QT_interval_std",
+        "QT_interval_min",
+        "QT_interval_max",
+        "ST_segment_mean",
+        "ST_segment_std",
+        "ST_segment_min",
+        "ST_segment_max",
+        "ST_slope_mean",
+        "ST_slope_std",
+        "ST_slope_min",
+        "ST_slope_max",
+        "HRV_MeanNN",
+        "HRV_SDNN",
+        "HRV_RMSSD",
+        "HRV_pNN50",
+        "age",
+        "is_male"
+    ],
+    "feature_count": 26,
+    "time_steps": 10,
+    "input_shape": [
+        10,
+        26
+    ],
+    "target": "chagas"
+}

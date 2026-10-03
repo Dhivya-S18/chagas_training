@@ -1,0 +1,70 @@
+{
+  "feature_names": [
+    "P_wave_duration_mean",
+    "P_wave_duration_std",
+    "P_wave_duration_min",
+    "P_wave_duration_max",
+    "PR_interval_mean",
+    "PR_interval_std",
+    "PR_interval_min",
+    "PR_interval_max",
+    "PR_segment_mean",
+    "PR_segment_std",
+    "PR_segment_min",
+    "PR_segment_max",
+    "QRS_duration_mean",
+    "QRS_duration_std",
+    "QRS_duration_min",
+    "QRS_duration_max",
+    "QT_interval_mean",
+    "QT_interval_std",
+    "QT_interval_min",
+    "QT_interval_max",
+    "ST_segment_mean",
+    "ST_segment_std",
+    "ST_segment_min",
+    "ST_segment_max",
+    "ST_slope_mean",
+    "ST_slope_std",
+    "ST_slope_min",
+    "ST_slope_max",
+    "HRV_MeanNN",
+    "HRV_SDNN",
+    "HRV_RMSSD",
+    "HRV_SDSD",
+    "HRV_CVNN",
+    "HRV_CVSD",
+    "HRV_MedianNN",
+    "HRV_MadNN",
+    "HRV_MCVNN",
+    "HRV_IQRNN",
+    "HRV_SDRMSSD",
+    "HRV_Prc20NN",
+    "HRV_Prc80NN",
+    "HRV_pNN50",
+    "HRV_pNN20",
+    "HRV_MinNN",
+    "HRV_MaxNN",
+    "HRV_HTI",
+    "HRV_TINN",
+    "age",
+    "is_male"
+  ],
+  "feature_count": 49,
+  "sequence_length": 10,
+  "expected_input_shape": [
+    10,
+    49
+  ],
+  "target": {
+    "name": "chagas",
+    "description": "Binary CSV label encoded as 0/1 (False/True); sequence semantics require confirmation before real-time ECG integration."
+  },
+  "output": {
+    "shape_per_sample": [
+      1
+    ],
+    "activation": "sigmoid",
+    "description": "Model score for encoded target chagas=1; no class-decision threshold is configured."
+  }
+}
